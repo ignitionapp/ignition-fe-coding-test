@@ -24,8 +24,8 @@ _If you cannot complete these exercises in less than 2 hours, you may find techn
 
 Write a function `isValidDecimal` that takes a `string` and returns
 
-- `true`, if it receives a string representing a valid decimal
-- `false`, if input is not a valid decimal
+- `true`, if it receives a string representing a valid decimal (e.g. `1.0`, `0`, `1`, `-1`, and `1.01`)
+- `false`, if input is not a valid decimal (e.g. `abc`, `.1`, `-.1`, and `1.`)
 
 #### Notes:
 
@@ -49,18 +49,19 @@ Show usage of `useState` react hook to manage a controlled input
 ### Button Grid
 
 Render a 3 x 3 grid of 9 buttons.
-When component renders, it should select one button at random and make it red, the rest of the buttons should be green. When red button is clicked it should cause another button to turn red at random. When an green button is clicked, it should become red.
+When component renders, it should select one button at random and make it red, the rest of the buttons should be green. When a red button is clicked it should cause another button to turn red at random. When a green button is clicked, it should become red.
+While you keep clicking, all the 9 buttons will be red in the end. 
 
 ### Fix an error in component
 
-You have a componenent called `FixMe` which uses another component called `BumpValue`.
+You have a component called `FixMe` which uses another component called `BumpValue`.
 `BumpValue` is supposed to show you the value and show a `Value + 1` button which, when clicked will increment the value.
 
 Component is fixed when:
 
 - spinner doesn't show, and
 - clicking the button increments value, and
-- current value calculation is shown as a correct correct
+- current value calculation is shown as a correct sum
 
 NOTE:
 

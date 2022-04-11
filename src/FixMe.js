@@ -2,7 +2,7 @@ import { Box, Button, Spinner } from "@chakra-ui/react"
 import { useState } from "react"
 
 // TODO: fix mistakes in below components to get everything to work
-// You have a fix when:
+// Components are fixed when:
 // - spinner doesn't show, and
 // - clicking the button increments value, and
 // - current value calculation is shown as a correct sum
