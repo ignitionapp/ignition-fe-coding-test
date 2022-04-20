@@ -1,4 +1,4 @@
 // TODO implement this function
-export const isValidDecimal = (input) => {
+export const isValidAmount = (input) => {
   return false;
 };

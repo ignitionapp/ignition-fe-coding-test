@@ -20,12 +20,12 @@ To aid with completing these exercises, a set of prerequisites have been assembl
 
 _If you cannot complete these exercises in less than 2 hours, you may find technical interview difficult._
 
-### `isValidDecimal` String Validator Function
+### `isValidAmount` String Validator Function
 
-Write a function `isValidDecimal` that takes a `string` and returns
+Write a function `isValidAmount` that takes a `string` and returns
 
-- `true`, if it receives a string representing a valid decimal (e.g. `1.0`, `0`, `1`, `-1`, and `1.01`)
-- `false`, if input is not a valid decimal (e.g. `abc`, `.1`, `-.1`, and `1.`)
+- `true`, if it receives a string representing a valid amount (e.g. `1.0`, `0`, `1`, `-1`, and `1.01`)
+- `false`, if input is not a valid amount (e.g. `abc`, `.1`, `-.1`, and `1.`)
 
 #### Notes:
 
@@ -34,7 +34,7 @@ Write a function `isValidDecimal` that takes a `string` and returns
 
 ### Write a test
 
-Write a `jest` test to cover all cases you can think of for `isValidDecimal` library function. Jest is already set up as a dependency.
+Write a `jest` test to cover all cases you can think of for `isValidAmount` library function. Jest is already set up as a dependency.
 
 ### Simple React Form
 
@@ -49,8 +49,11 @@ Show usage of `useState` react hook to manage a controlled input
 ### Button Grid
 
 Render a 3 x 3 grid of 9 buttons.
-When component renders, it should select one button at random and make it red, the rest of the buttons should be green. When a red button is clicked it should cause another button to turn red at random. When a green button is clicked, it should become red.
-While you keep clicking, all the 9 buttons will be red in the end. 
+When component renders initially, it should select one button at random and make it red, the rest of the buttons should be green. When a red button is clicked it should cause another button to turn red at random, and turn itself green. When a green button is clicked, it should become red. The existing red button should become green.
+
+#### Notes:
+
+Only one button could be red after clicking.
 
 ### Fix an error in component
 
