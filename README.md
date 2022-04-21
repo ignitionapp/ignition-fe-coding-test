@@ -48,12 +48,13 @@ Show usage of `useState` react hook to manage a controlled input
 
 ### Button Grid
 
-Render a 3 x 3 grid of 9 buttons.
-When component renders initially, it should select one button at random and make it red, the rest of the buttons should be green. When a red button is clicked it should cause another button to turn red at random, and turn itself green. When a green button is clicked, it should become red. The existing red button should become green.
+Render a 3 x 3 grid of 9 buttons with the following criteria.
 
-#### Notes:
+- When component renders initially, it should select one button at random and make it red, the rest of the buttons should be green. 
+- When a red button is clicked it should cause another button to turn red at random, and turn itself green. 
+- When a green button is clicked, it should become red. The existing red button should become green.
 
-Only one button could be red after clicking.
+Note - Only one button could be red after clicking.
 
 ### Fix an error in component
 
