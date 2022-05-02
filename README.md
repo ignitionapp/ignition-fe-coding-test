@@ -18,11 +18,11 @@ To aid with completing these exercises, a set of prerequisites have been assembl
 
 ## Exercises
 
-_If you cannot complete these exercises in less than 2 hours, you may find technical interview difficult._
+Solve as many problems as you can from this set
 
-### `isValidDecimal` String Validator Function
+### `isValidIdentifier` String Validator Function
 
-Write a function `isValidDecimal` that takes a `string` and returns
+Write a function `isValidIdentifier` that takes a `string` and returns
 
 - `true`, if it receives a string representing a valid decimal
 - `false`, if input is not a valid decimal
@@ -30,7 +30,6 @@ Write a function `isValidDecimal` that takes a `string` and returns
 #### Notes:
 
 - **Use regular expressions** to power your validation logic
-- Assume that `.` (dot) is a decimal separator
 
 ### Write a test
 
@@ -49,23 +48,22 @@ Show usage of `useState` react hook to manage a controlled input
 ### Button Grid
 
 Render a 3 x 3 grid of 9 buttons.
-When component renders, it should select one button at random and make it red, the rest of the buttons should be green. When red button is clicked it should cause another button to turn red at random. When an green button is clicked, it should become red.
+When component renders, it should select one button at random and make it red, the rest of the buttons should be green. When red button is clicked it should cause another button to turn red at random. When an green button is clicked, it should become red. There should only be one red button in the grid at a time.
 
 ### Fix an error in component
 
-You have a componenent called `FixMe` which uses another component called `BumpValue`.
-`BumpValue` is supposed to show you the value and show a `Value + 1` button which, when clicked will increment the value.
+You have a componenent called `DataGrid` which uses another component called `Detail`.
+`Detail` is supposed to show you the value and show a `Value + 1` button which, when clicked will increment the value.
 
 Component is fixed when:
 
-- spinner doesn't show, and
-- clicking the button increments value, and
-- current value calculation is shown as a correct correct
+- You can select a category by clicking on it
+- Selected category detail is shown in the table
+- All calculations are correct
 
 NOTE:
 
 - Keep both components
-- Do not change the signature of components. Value and callback props should stay as they are.
 
 ## Submitting your result
 

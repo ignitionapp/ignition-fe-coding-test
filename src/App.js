@@ -1,11 +1,12 @@
 import { Heading } from "@chakra-ui/react"
 import { Routes, Route, Link as RouterLink } from "react-router-dom"
 import { Box, Stack, Link } from "@chakra-ui/react"
+import { Divider } from '@chakra-ui/react'
 
 import Home from "./Home"
 import SimpleForm from "./SimpleForm"
 import ButtonGrid from "./ButtonGrid"
-import FixMe from "./FixMe"
+import DataGrid from "./DataGrid"
 
 export default function App() {
   return (
@@ -22,17 +23,19 @@ export default function App() {
           <Link to="/grid" as={RouterLink} color="blue">
             Button Grid
           </Link>
-          <Link to="/fixme" as={RouterLink} color="blue">
-            Fix Me
+          <Link to="/data" as={RouterLink} color="blue">
+            Data Grid (Fix Me)
           </Link>
         </Stack>
+
+        <Divider />
 
         <Box>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="simple" element={<SimpleForm />} />
             <Route path="grid" element={<ButtonGrid />} />
-            <Route path="fixme" element={<FixMe />} />
+            <Route path="data" element={<DataGrid />} />
           </Routes>
         </Box>
       </Stack>
