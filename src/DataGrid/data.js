@@ -1,0 +1,16 @@
+export const data = [
+  { date: '2022-01-01', amount: 200.20, category: 'Alpha' },
+  { date: '2022-01-02', amount: 523.50, category: 'Beta' },
+  { date: '2022-01-03', amount: 534.60, category: 'Gamma' },
+  { date: '2022-01-04', amount: 664.10, category: 'Alpha' },
+  { date: '2022-01-05', amount: 985.10, category: 'Beta' },
+  { date: '2022-01-07', amount: 943.90, category: 'Alpha' },
+  { date: '2022-01-08', amount: 321.21, category: 'Beta' },
+  { date: '2022-01-01', amount: 200.20, category: 'Alpha' },
+  { date: '2022-01-02', amount: 523.50, category: 'Beta' },
+  { date: '2022-01-05', amount: 985.10, category: 'Beta' },
+  { date: '2022-01-06', amount: 436.00, category: 'Gamma' },
+  { date: '2022-01-07', amount: 943.90, category: 'Alpha' },
+  { date: '2022-01-08', amount: 321.21, category: 'Beta' },
+  { date: '2022-01-09', amount: 123.23, category: 'Gamma' },
+]

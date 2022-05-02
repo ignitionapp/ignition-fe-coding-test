@@ -9,7 +9,6 @@ The purpose of this test is to evaluate your ability with the following aspects 
 - Using react component State
 - Reading existing code and fixing bugs
 - Writing a more advanced component using lifecycle hooks
-- API Interaction (no server knowledge required)
 
 ## Setup
 
@@ -18,23 +17,22 @@ To aid with completing these exercises, a set of prerequisites have been assembl
 
 ## Exercises
 
-_If you cannot complete these exercises in less than 2 hours, you may find technical interview difficult._
+Solve as many problems as you can from this set
 
-### `isValidAmount` String Validator Function
+### `isValidDecimal` String Validator Function
 
-Write a function `isValidAmount` that takes a `string` and returns
+Write a function `isValidDecimal` that takes a `string` and returns
 
-- `true`, if it receives a string representing a valid amount (e.g. `1.0`, `0`, `1`, `-1`, and `1.01`)
-- `false`, if input is not a valid amount (e.g. `abc`, `.1`, `-.1`, and `1.`)
+- `true`, if it receives a string representing a valid decimal
+- `false`, if input is not a valid decimal
 
 #### Notes:
 
 - **Use regular expressions** to power your validation logic
-- Assume that `.` (dot) is a decimal separator
 
 ### Write a test
 
-Write a `jest` test to cover all cases you can think of for `isValidAmount` library function. Jest is already set up as a dependency.
+Write a `jest` test to cover all cases you can think of for `isValidDecimal` library function. Jest is already set up as a dependency.
 
 ### Simple React Form
 
@@ -54,23 +52,21 @@ Render a 3 x 3 grid of 9 buttons with the following criteria.
 - When a red button is clicked it should cause another button to turn red at random, and turn itself green. 
 - When a green button is clicked, it should become red. The existing red button should become green.
 
-Note - Only one button could be red after clicking.
-
+Note - Only one button should be red on the screen.
 ### Fix an error in component
 
-You have a component called `FixMe` which uses another component called `BumpValue`.
-`BumpValue` is supposed to show you the value and show a `Value + 1` button which, when clicked will increment the value.
+You have a componenent called `DataGrid` which uses another component called `Detail`.
+`Detail` is supposed to show you the expansion of the rows that comprise the data grid
 
 Component is fixed when:
 
-- spinner doesn't show, and
-- clicking the button increments value, and
-- current value calculation is shown as a correct sum
+- You can select a category by clicking on it
+- Selected category detail is shown in the table
+- All calculations are correct
 
 NOTE:
 
 - Keep both components
-- Do not change the signature of components. Value and callback props should stay as they are.
 
 ## Submitting your result
 
