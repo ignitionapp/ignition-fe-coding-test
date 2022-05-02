@@ -23,10 +23,10 @@ const Home = () => {
         </Text>
         <UnorderedList>
           <ListItem>
-            <Text as="kbd">isValidDecimal</Text> Helper Function in lib folder
+            <Text as="kbd">isValidAmount</Text> Helper Function in lib folder
           </ListItem>
           <ListItem>
-            Write a test for <Text as="kbd">isValidDecimal</Text> in lib folder
+            Write a test for <Text as="kbd">isValidAmount</Text> in lib folder
           </ListItem>
           <ListItem>
             <Link to="/simple" as={RouterLink} color="blue">

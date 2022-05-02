@@ -9,7 +9,6 @@ The purpose of this test is to evaluate your ability with the following aspects 
 - Using react component State
 - Reading existing code and fixing bugs
 - Writing a more advanced component using lifecycle hooks
-- API Interaction (no server knowledge required)
 
 ## Setup
 
@@ -20,9 +19,9 @@ To aid with completing these exercises, a set of prerequisites have been assembl
 
 Solve as many problems as you can from this set
 
-### `isValidIdentifier` String Validator Function
+### `isValidDecimal` String Validator Function
 
-Write a function `isValidIdentifier` that takes a `string` and returns
+Write a function `isValidDecimal` that takes a `string` and returns
 
 - `true`, if it receives a string representing a valid decimal
 - `false`, if input is not a valid decimal
@@ -47,13 +46,17 @@ Show usage of `useState` react hook to manage a controlled input
 
 ### Button Grid
 
-Render a 3 x 3 grid of 9 buttons.
-When component renders, it should select one button at random and make it red, the rest of the buttons should be green. When red button is clicked it should cause another button to turn red at random. When an green button is clicked, it should become red. There should only be one red button in the grid at a time.
+Render a 3 x 3 grid of 9 buttons with the following criteria.
 
+- When component renders initially, it should select one button at random and make it red, the rest of the buttons should be green. 
+- When a red button is clicked it should cause another button to turn red at random, and turn itself green. 
+- When a green button is clicked, it should become red. The existing red button should become green.
+
+Note - Only one button should be red on the screen.
 ### Fix an error in component
 
 You have a componenent called `DataGrid` which uses another component called `Detail`.
-`Detail` is supposed to show you the value and show a `Value + 1` button which, when clicked will increment the value.
+`Detail` is supposed to show you the expansion of the rows that comprise the data grid
 
 Component is fixed when:
 
